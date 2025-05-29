@@ -11,4 +11,4 @@ plugins {
 }
 
 rootProject.name = "Parcial"
-include("adapter", "builder", "flyweight")
+include("adapter", "bridge", "flyweight")
