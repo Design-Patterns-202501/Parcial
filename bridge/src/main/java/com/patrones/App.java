@@ -14,18 +14,17 @@ public class App {
 
     public static void main(String[] args) {
         IMessage bridge = new BridgeMessageEncryption(
-                    new AbstractFactory().getFactory().getEncryptService()
-                );
+                new AbstractFactory().getFactory().getEncryptService());
 
         String message = "Holis";
         String psw = "password";
 
         try {
-			String result = bridge.encryptMessage(message, psw);
+            String result = bridge.encryptMessage(message, psw);
             System.out.println(result);
             System.out.println(bridge.getMethodClassName());
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }

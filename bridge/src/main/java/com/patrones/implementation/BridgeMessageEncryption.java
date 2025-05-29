@@ -9,10 +9,10 @@ public class BridgeMessageEncryption implements IMessage {
         this.encryptMethod = method;
     }
 
-	@Override
-	public String encryptMessage(String message, String password) throws Exception {
+    @Override
+    public String encryptMessage(String message, String password) throws Exception {
         return encryptMethod.encrypt(message, password);
-	}
+    }
 
     @Override
     public String getMethodClassName() {
